@@ -1,0 +1,40 @@
+# CircuitPython Libraries Required for Water Depth Monitor
+# Download these from https://circuitpython.org/libraries and place in /lib folder
+
+# Core Adafruit Libraries
+adafruit_ds3231.mpy           # DS3231 RTC
+adafruit_rockblock.mpy        # RockBlock satellite modem  
+adafruit_sdcard.mpy           # SD card support
+
+# Bus and IO Libraries
+adafruit_bus_device/          # I2C/SPI bus utilities (folder)
+
+# CircuitPython Built-in Libraries (should be included)
+# - analogio (analog input)
+# - digitalio (digital pins)
+# - busio (I2C, SPI, UART)
+# - time (time functions)
+# - rtc (real-time clock)
+# - storage (filesystem)
+# - os (file operations)
+# - json (JSON parsing)
+
+# Hardware Requirements:
+# - ItsyBitsy M4 Express (CircuitPython 8.x or later)
+# - RockBlock 9602 satellite modem
+# - Adafruit DS3231 RTC breakout
+# - Pressure sensor with analog output (0.5-4.5V range)
+# - TPL5110 low power timer
+# - MicroSD card and breakout
+# - LiPo battery with voltage divider for monitoring
+
+# Pin Connections (see config.py for details):
+# A0 - Pressure sensor analog output
+# D0 - RockBlock RX
+# D1 - RockBlock TX  
+# D5 - TPL5110 done signal
+# D6 - RockBlock sleep control
+# D10 - SD card CS
+# D13 - Status LED (built-in)
+# SDA/SCL - DS3231 RTC (I2C)
+# SPI pins - SD card (MOSI, MISO, SCK)
