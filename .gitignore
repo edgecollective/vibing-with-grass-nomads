@@ -1,0 +1,146 @@
+# CircuitPython .gitignore
+
+# CircuitPython system files
+boot_out.txt
+.fseventsd/
+.metadata_never_index
+.Trashes
+
+# CircuitPython libraries (downloaded separately)
+lib/
+*.mpy
+
+# CircuitPython auto-generated files
+code.py.bak
+main.py.bak
+
+# SD Card data files (runtime generated)
+/sd/
+*.csv
+*.log
+*.json.bak
+state_backup.json
+
+# Development and testing files
+test_*.py
+debug_*.py
+temp_*.py
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Project specific
+# Sensor calibration data (should be set up per deployment)
+calibration_*.json
+
+# Temporary backup files
+*.tmp
+*.bak
+*.backup
+
+# Log files from development/testing
+*.log
+debug.txt
+serial_output.txt
+
+# Documentation build files
+docs/_build/
+docs/build/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+# Hardware specific - exclude actual hardware config variations
+config_local.py
+settings_local.py
+
+# Satellite communication test files (may contain credentials)
+satellite_test_*.py
+rockblock_test_*.py
+
+# Data exports and analysis
+data_export/
+analysis/
+*.xlsx
+*.csv.export
